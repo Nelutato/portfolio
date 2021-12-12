@@ -1,0 +1,150 @@
+    /* background-color: #17252A; ciemno niebieski */
+    /* background-color: #2B7A78; */
+    /* background-color: #3AAFA9; */
+    /* background-color: #DEF2F1 */
+    /* background-color: #FEFFFF    bialy*/
+    /* rgb(22, 33, 36) */
+    /* #343633 black olive */
+html ,body  
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #3AAFA9;
+    color: white;
+    font-size: 110%;
+}
+header
+{
+
+    height: 7vh;
+    /* background-color: #2B7A78; */
+    justify-content: space-between;
+}
+nav,ol
+{
+
+    display: flex;
+    align-items: center;
+    float: right;
+}
+.menu_link
+{
+    padding: 2px;
+    margin-right: 8px;
+    display: inline-block;
+    background-color: #2B7A78;
+    width: 15vh;
+    border-radius: 5em;
+    text-align: center;
+}
+a
+{
+    color: #FEFFFF;
+    text-decoration: none;
+    margin: 2px;
+}
+.logo{
+    margin: 1% 2%;
+    border-radius: 20px;
+}
+/*               =======================                */
+.container
+{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+
+}
+#prace{
+    /* background-color:rgba(255, 255, 255,0.8); */
+
+    background-color: #3AAFA9;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+
+}
+
+/*                         ==================   PRACE          */
+.carusel
+{
+position: relative;
+width: 90%;
+margin-left: 5%;
+height: 60vh;
+background-color: black;
+}
+.carusel img
+{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.carusel:hover img  ,.skip_slide:hover,  .back_slide:hover
+{
+
+    opacity: 0.5;
+}
+.skip_slide , .back_slide
+{
+    position: absolute;
+    z-index: 1;
+    right: 0px ;
+    top : 40%;
+    width: 10%;
+    height: 20%;
+    cursor: pointer; 
+}
+.skip_slide
+{
+    right: 0px ;
+}
+.back_slide
+{
+    left: 0px ;
+}
+.angle_bracet
+{
+    position: absolute;
+    top:30%;
+    left: 30%;
+}
+/*                         ============= O mnie */
+#omnie
+{
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+.opis
+{
+    margin:5% 7.5%;
+    width: 35%;
+    height: 25%;
+    float: left;
+     background-color: #DEF2F1;
+     color: #17252A;
+    border-radius: 25% 10%;
+
+}
+.opis:hover
+{
+    opacity: 0.8;
+
+}
+footer
+{
+    position: absolute;
+    width: 100%;
+    clear: both;
+    margin-top: 85vh;
+    height: 5vh;
+    margin-bottom: 0px;
+}
