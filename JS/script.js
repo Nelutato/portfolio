@@ -1,30 +1,32 @@
 
     //          ==========================      prace \/       ==================
-    // var i=0;
-    // var image = [];
+var clock = 0;
+var slide = 0;
 
-    // image[0]="img/image1.jpg";
-    // image[1]="img/image2.png";
-    // image[2]="img/image3.jpg";
-    var clock = 0;
-    var slide = 0;
     function autoChangeImg() 
     {
         slide++;
-        if(slide=4)
-        {
-            slide=1;
-        }
+        if(slide>3) 
+            {slide=1;}
+
         var photo = "img/image"+slide+".jpg";
         document.slide.src=photo;
-
-        clock = setTimeout("changeImg()",5000);
+        
+        clock = setTimeout("autoChangeImg()",5000);
     }
-    function changeImg(slide_nr)
+
+    function changeImg(sign)
     {
-        slide= slide+ slide_nr; 
+        if(sign =="plus")
+            {slide++;}
+        else if (sign == "minus")
+            {slide --; if(slide==0){slide = 3}} 
+
+        var photo = "img/image"+slide+".jpg";
+            document.slide.src=photo;
+
         clearTimeout(clock);
-        setTimeout("changeImg()",100)
+        clock = setTimeout("autoChangeImg() ",5000);
     }
     
 //          ==========================      o mnie \/       ==================

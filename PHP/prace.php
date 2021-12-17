@@ -6,9 +6,9 @@
 <div id="prace"  >
 
     <div class="carusel">
-        <div class="back_slide" >  <i class ="angle_bracet" > < </i>   </div>
+        <div class="back_slide" onclick='changeImg("minus")' >  <i class ="angle_bracet" > < </i>   </div>
         <img name="slide"id="slide" >
-        <div class="skip_slide"> <i class="angle_bracet"> > </i> </div>
+        <div class="skip_slide" onclick='changeImg("plus")' > <i class="angle_bracet"> > </i> </div>
     </div>
 </div>
 </body>
