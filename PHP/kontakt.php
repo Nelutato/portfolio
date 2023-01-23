@@ -1,10 +1,13 @@
-
+<div id="contactForm">
 <form action="PHP/mail.php" method="POST">
-    email :
-        <input type="email"/>
-    tytul
-        <input type="text">
-    text:
-        <input type="text" name = "message" id="message">
-    <button type="submit" value="send"> wyslij</button>
+    <br/>   <i class="FormNameOfInput" >email :</i>  <br/>
+        <input type="email" class="inputForm" placeholder='example@example.com'/>
+    <br/>   <i class="FormNameOfInput">tytul : </i>  <br/>
+        <input type="text" class="inputForm" placeholder="title">
+    <br/>   <i class="FormNameOfInput">text :</i>   <br/>
+        <textarea id="ContactMessageForm" name="ContactMessageForm" placeholder="text">
+        </textarea>
+    <br/>
+    <button type="submit" value="send" class="ContactButton"> S E N D</button>
 </form>
+</div>
