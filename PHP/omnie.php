@@ -1,3 +1,0 @@
-<div id="omnie">
-
-</div>

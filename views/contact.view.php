@@ -1,3 +1,8 @@
+<?php 
+    require('./components/head.component.php'); 
+    require('./components/nav.component.php');
+?>
+
 <div id="contactForm">
 <form action="PHP/mail.php" method="POST">
     <br/>   <i class="FormNameOfInput" >email :</i>  <br/>
@@ -8,6 +13,9 @@
         <textarea id="ContactMessageForm" name="ContactMessageForm" placeholder="text">
         </textarea>
     <br/>
-    <button type="submit" value="send" class="ContactButton"> S E N D</button>
+    <button type="submit" value="send" class="ContactButton"> S E N D</button> ;
 </form>
 </div>
+<?php
+    require ('../components/foter.component.php');
+?>

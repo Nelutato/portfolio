@@ -1,3 +1,8 @@
+<?php 
+    require('./components/head.component.php'); 
+    require('./components/nav.component.php');
+?>
+
 
 <body onload="autoChangeSlide()">
 
@@ -20,3 +25,7 @@
 
 </div>
 </body>
+
+<?php
+    require ('../components/foter.component.php');
+?>
